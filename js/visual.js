@@ -4,12 +4,12 @@ import {Particle} from "./particle.js";
 export class Visual {
     constructor() {
         this.text = new Text();
-        this.texture = PIXI.Texture.from("particle.png");
+        this.texture = PIXI.Texture.from("../texture/particle.png");
         this.particles = [];
         this.mouse = {
             x: 0,
             y: 0,
-            radius: 100,
+            radius: 10,
         };
 
         document.addEventListener("pointermove", this.onMove.bind(this), false);
@@ -20,7 +20,7 @@ export class Visual {
             stage.removeChild(this.container);
         }
 
-        this.pos = this.text.setText("A", 2, stageWidth, stageHeight);
+        this.pos = this.text.setText("쀼싸움", 2, stageWidth, stageHeight);
         this.container = new PIXI.ParticleContainer(
             this.pos.length,
             {

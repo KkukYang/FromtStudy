@@ -35,7 +35,7 @@ class App {
             resolution: (window.devicePixelRatio > 1) ? 2 : 1,
             autoDensity: true,
             powerPreference: "high-performance",
-            backgroundColor: 0xffffff,
+            backgroundColor: 0x000000,
         });
         document.body.appendChild(this.renderer.view);
         this.stage = new PIXI.Container();
