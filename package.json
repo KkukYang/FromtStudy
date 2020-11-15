@@ -19,6 +19,7 @@
   "homepage": "https://github.com/KkukYang/FrontStudy#readme",
   "dependencies": {
     "jquery": "^3.5.1",
-    "pixi.js": "^5.3.3"
+    "pixi.js": "^5.3.3",
+    "webfontloader": "^1.6.28"
   }
 }
